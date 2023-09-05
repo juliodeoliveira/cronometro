@@ -21,7 +21,7 @@ function pause() {
    clearInterval(time)
    psClicked = 1
 
-   if (psClicked > 0 && sec != 0) {
+   if (psClicked > 0 && sec != 0 || min != 0 || hr != 0) {
       document.querySelector(".btnStart").style.pointerEvents = "auto"
       document.querySelector(".btnStart").value = "Retomar"
    }
