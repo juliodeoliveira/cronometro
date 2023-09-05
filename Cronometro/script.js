@@ -1,9 +1,9 @@
-var sec = 0
-var min = 0
-var hr = 0
-var time
-var strtClicked = 0
-var psClicked = 0
+let sec = 0
+let min = 0
+let hr = 0
+let time
+let strtClicked = 0
+let psClicked = 0
 let stClicked = 0
 
 
@@ -39,7 +39,7 @@ function digits(num) {
    }else {
       return num
    }
-   // se não tiver o else, vai dar um bug muito engraçado!
+
 
 }
 
