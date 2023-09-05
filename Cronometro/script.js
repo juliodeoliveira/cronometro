@@ -1,9 +1,10 @@
-var sec = 00
-var min = 00
-var hr = 00
+var sec = 0
+var min = 0
+var hr = 0
 var time
 var strtClicked = 0
 var psClicked = 0
+let stClicked = 0
 
 
 function start(){
@@ -20,13 +21,14 @@ function pause() {
    clearInterval(time)
    psClicked = 1
 
-   if (psClicked == 1) {
+   if (psClicked > 0 && sec != 0) {
       document.querySelector(".btnStart").style.pointerEvents = "auto"
       document.querySelector(".btnStart").value = "Retomar"
    }
 }
 
 function slow() {
+   stClicked = 1
    console.log("Stopped!")
    location.reload()
 }
